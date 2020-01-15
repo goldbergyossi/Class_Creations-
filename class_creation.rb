@@ -5,33 +5,35 @@ class Animal
         @colour = colour
     end
 
-    def getHeight
-        return @height
-    end
+    attr_accessor :height, :weight, :colour
     
-    def getWeight
-        return @weight
-    end
+    # def getHeight
+    #     return @height
+    # end
     
-    def getColour
-        return @colour
-    end    
+    # def getWeight
+    #     return @weight
+    # end
+    
+    # def getColour
+    #     return @colour
+    # end    
 
-    def setWeight(newWeight)
-        @weight = newWeight
-    end
+    # def setWeight(newWeight)
+    #     @weight = newWeight
+    # end
 
-    
 end
+
 dog = Animal.new("20in", "30kg", "black")
 duck = Animal.new(7, "5kg", "white")
-puts dog.getHeight
-puts dog.getWeight
-puts dog.setWeight("50kg")
-puts dog.getColour
-puts duck.getHeight
-puts duck.getWeight
-puts duck.getColour
+puts dog.height
+dog.weight = "50kg"
+puts dog.weight
+puts dog.colour
+puts duck.height
+puts duck.weight
+puts duck.colour
 
 
 
